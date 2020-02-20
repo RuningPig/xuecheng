@@ -41,3 +41,12 @@ export const page_getHtml= id => {
 export const page_postPage= id => {
   return http.requestPost(apiUrl+'/cms/page/postPage/'+id)
 }
+
+/**模板列表查询 */
+export const template_list= (page,size,params) => {
+  //params为json格式
+  //使用querystring将json对象转成key/value串
+  params.siteId = '5a751fab6abb5044e0d19ea1';
+  let querys = querystring.stringify(params)
+  return http.requestQuickGet(apiUrl+'/cms/template/list/'+page+'/'+size+'/?'+querys)
+}
