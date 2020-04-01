@@ -140,7 +140,6 @@
       }
     },
     created: function () {
-
     },
     mounted:function(){
 
@@ -164,6 +163,10 @@
         {
           templateId:'5a962bf8b00ffc514038fafa',
           templateName:'轮播图'
+        },
+        {
+          templateId:"5e4ba7300abedb173cc73525",
+          templateName:'test0218'
         }
       ]
     }
